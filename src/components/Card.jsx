@@ -1,7 +1,11 @@
+import gatito from "../assets/gatito.gif";
 
-const Card = () => {
+const Card = ({user}) => {
   return (
-    <div>Hola, soy una card!</div>
+    <div>
+      <p className="card">¡Gracias por llenar los campos, {user.nombre} {user.apellido}! Aquí tienes un gatito:</p>
+      <img src={gatito}/>
+    </div>
   )
 }
 
